@@ -5,6 +5,7 @@ import { formatToLocalTime, iconUrlFromCode } from '../service/WeatherService'
 const TemperatureAndDetails = ({weather:{
     lon,lat,temp,feels_like,temp_max,temp_min,humidity,name,timezone,dt,country,sunrise,sunset,speed,details,icon
 }}) => {
+    console.log(iconUrlFromCode(icon))
   return (
     <div>
         <div className='flex items-center justify-center py-6 text-xl text-cyan-300'>
